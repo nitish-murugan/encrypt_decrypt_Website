@@ -1,0 +1,135 @@
+body{
+    background-image: url('bgproduct.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.packages{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.packages table{
+    font-weight: 600;
+    opacity: 0.9;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    font-weight: 6000;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.space{
+    margin-top: 100px;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 400px; 
+    max-width: 100px; 
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.os-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+}
+
+.os-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.os-list li:hover{
+    transform: translateY(-20px);
+}
+
+.os-list img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.os-list p{
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.container a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em; 
+    margin: 20px 0;
+    color: #fff;
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    padding: 15px 20px;
+    padding-left: 40px;  
+    border-radius: 10px;
+    border: 2px solid #ff0080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #ff0080;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+h1:hover {
+    padding: 20px 25px;
+    padding-left: 45px; 
+    background: linear-gradient(90deg, #ff0080, #ff8c00);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1:hover::after {
+    width: 80%;
+}
